@@ -1,0 +1,358 @@
+/* Hero Section - matching homepage style */
+.page-header {
+    background: linear-gradient(135deg, #fff5f5 0%, #ffd6d6 100%);
+    width: 100%;
+    height: 40vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 80px;
+    padding: 14px;
+}
+
+.page-header h2 {
+    font-size: 46px;
+    line-height: 54px;
+    color: #ff523b;
+    padding: 30px 0;
+    animation: fadeInDown 0.8s ease;
+}
+
+.page-header p {
+    color: #555;
+    font-size: 16px;
+    margin: 15px 0 20px 0;
+    animation: fadeInUp 0.8s ease;
+}
+
+/* Account Section */
+.account-section {
+    padding: 80px 0;
+    background: linear-gradient(135deg, #faf9f9 0%, #fff5f5 100%);
+    min-height: 100vh;
+}
+
+.account-wrapper {
+    max-width: 450px;
+    margin: 0 auto;
+}
+
+.form-container {
+    background: white;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+    min-height: 400px;
+    position: relative;
+}
+
+/* Form Switch Buttons */
+.form-btns {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    margin-bottom: 40px;
+    position: relative;
+}
+
+.form-btn {
+    font-size: 18px;
+    font-weight: 600;
+    color: #777;
+    cursor: pointer;
+    padding: 5px 10px;
+    position: relative;
+    transition: all 0.3s ease;
+}
+
+.form-btn::after {
+    content: '';
+    position: absolute;
+    bottom: -8px;
+    left: 0;
+    width: 0;
+    height: 3px;
+    background: #ff523b;
+    transition: width 0.3s ease;
+    border-radius: 5px;
+}
+
+.form-btn.active {
+    color: #ff523b;
+}
+
+.form-btn.active::after {
+    width: 100%;
+}
+
+/* Form Groups */
+.form-group {
+    position: relative;
+    margin-bottom: 25px;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 15px 45px;
+    border: 2px solid #eee;
+    border-radius: 10px;
+    font-size: 15px;
+    transition: all 0.3s ease;
+    background: #f8f9fa;
+}
+
+.form-group input:focus {
+    border-color: #ff523b;
+    background: white;
+    box-shadow: 0 5px 15px rgba(255, 82, 59, 0.1);
+}
+
+.form-group label {
+    position: absolute;
+    left: 45px;
+    top: 15px;
+    color: #999;
+    font-size: 15px;
+    pointer-events: none;
+    transition: all 0.3s ease;
+}
+
+.form-group input:focus ~ label,
+.form-group input:valid ~ label {
+    top: -10px;
+    left: 15px;
+    font-size: 13px;
+    background: white;
+    padding: 0 5px;
+    color: #ff523b;
+    font-weight: 600;
+}
+
+.form-group i {
+    position: absolute;
+    left: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #999;
+    transition: all 0.3s ease;
+}
+
+.form-group input:focus ~ i {
+    color: #ff523b;
+}
+
+.form-group .toggle-password {
+    left: auto;
+    right: 15px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.form-group .toggle-password:hover {
+    color: #ff523b;
+}
+
+/* Remember Me & Forgot Password */
+.form-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 25px 0;
+}
+
+.remember-me {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+/* Social Login Section */
+.social-login {
+    margin-top: 30px;
+    text-align: center;
+    position: relative;
+}
+
+/* Divider Line with Text */
+.social-login p {
+    display: inline-block;
+    position: relative;
+    font-size: 14px;
+    color: #777;
+    margin: 30px 0;
+    width: 100%;
+}
+
+.social-login p::before,
+.social-login p::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    width: calc(50% - 50px);
+    height: 1px;
+    background-color: #ddd;
+}
+
+.social-login p::before {
+    left: 0;
+}
+
+.social-login p::after {
+    right: 0;
+}
+
+/* Social Icons Container */
+.social-icons {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    flex-direction: column;
+    max-width: 300px;
+    margin: 0 auto;
+}
+
+/* Social Login Buttons */
+.social-icons a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 12px 30px;
+    border-radius: 30px;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 500;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+    gap: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Facebook Button */
+.social-icons .facebook {
+    background: #1877f2;
+    border: 1px solid #1877f2;
+}
+
+.social-icons .facebook:hover {
+    background: #0d65d9;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 15px rgba(24, 119, 242, 0.2);
+}
+
+/* Google Button */
+.social-icons .google {
+    background: #fff;
+    color: #444;
+    border: 1px solid #ddd;
+}
+
+.social-icons .google:hover {
+    background: #f8f8f8;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Icons within buttons */
+.social-icons a i {
+    font-size: 18px;
+    transition: transform 0.3s ease;
+}
+
+.social-icons .facebook i {
+    color: #fff;
+}
+
+.social-icons .google i {
+    color: #444;
+}
+
+/* Form Display */
+.form {
+    display: none;
+    opacity: 0;
+    transform: translateY(20px);
+}
+
+.form.active {
+    display: block;
+    animation: formFadeIn 0.5s ease forwards;
+}
+
+@keyframes formFadeIn {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Button Styles - matching homepage */
+.btn {
+    display: inline-block;
+    background: #ff523b;
+    color: #fff;
+    padding: 12px 30px;
+    border-radius: 30px;
+    border: none;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    width: 100%;
+    text-align: center;
+    margin-top: 20px;
+    position: relative;
+    overflow: hidden;
+}
+
+.btn:hover {
+    background: #563434;
+}
+
+/* Button hover effect - matching homepage */
+.btn::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+        90deg,
+        transparent,
+        rgba(255, 255, 255, 0.2),
+        transparent
+    );
+    transition: 0.5s;
+}
+
+.btn:hover::after {
+    left: 100%;
+}
+
+/* Button active state */
+.btn:active {
+    transform: scale(0.98);
+}
+
+/* Social Login Buttons */
+.social-icons a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 12px 30px;
+    border-radius: 30px;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 500;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.social-icons a i {
+    margin-right: 10px;
+}

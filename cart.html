@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shopping Cart - GhanaStore</title>
+    <link rel="stylesheet" href="styles/style.css" />
+    <link rel="stylesheet" href="styles/navbar.css" />
+    <link rel="stylesheet" href="styles/cart.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <div class="navbar">
+      <nav>
+        <div class="logo">
+          <a href="index.html">
+            <img src="images/logo.png" alt="RedStore" />
+          </a>
+        </div>
+        
+        <div class="menu-icon">
+          <i class="fas fa-bars"></i>
+        </div>
+
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="products.html">Products</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="account.html">Account</a></li>
+          <li><a href="cart.html" class="active">
+            <i class="fas fa-shopping-cart"></i>
+            <span class="cart-count">0</span>
+          </a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <!-- Cart Section -->
+    <section class="cart-section">
+      <div class="container">
+        <h1>Shopping Cart</h1>
+        
+        <!-- Cart Container -->
+        <div class="cart-container">
+          <!-- Cart Items -->
+          <div class="cart-items">
+            <!-- Dynamic cart items will be inserted here by JavaScript -->
+          </div>
+
+          <!-- Cart Summary -->
+          <div class="cart-summary">
+            <h2>Order Summary</h2>
+            <div class="summary-item">
+              <span>Subtotal</span>
+              <span class="subtotal">GHC 0.00</span>
+            </div>
+            <div class="summary-item">
+              <span>Shipping</span>
+              <span class="shipping">GHC 0.00</span>
+            </div>
+            <div class="summary-item discount-row" style="display: none;">
+              <span>Discount</span>
+              <span class="discount">-GHC 0.00</span>
+            </div>
+            <hr>
+            <div class="summary-item total">
+              <span>Total</span>
+              <span class="total-amount">GHC 0.00</span>
+            </div>
+
+            <!-- Promo Code -->
+            <div class="promo-code">
+              <input type="text" id="promoCode" placeholder="Enter promo code">
+              <button id="applyPromo">Apply</button>
+            </div>
+
+            <!-- Checkout Button -->
+            <button class="checkout-btn" id="checkoutBtn">
+              Proceed to Checkout
+            </button>
+
+            <!-- Continue Shopping -->
+            <a href="products.html" class="continue-shopping">
+              <i class="fas fa-arrow-left"></i> Continue Shopping
+            </a>
+          </div>
+        </div>
+
+        <!-- Empty Cart Message -->
+        <div class="empty-cart">
+          <i class="fas fa-shopping-cart"></i>
+          <h2>Your cart is empty</h2>
+          <p>Looks like you haven't added anything to your cart yet.</p>
+          <a href="products.html" class="continue-shopping">Start Shopping</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+<div class="footer">
+  <div class="container">
+      <div class="row">
+          <!-- Download App -->
+          <div class="footer-col-1">
+              <h3>Download Our App</h3>
+              <p>Download App for Android and ios mobile phone.</p>
+              <div class="app-logo">
+                  <img src="images/play-store.png">
+                  <img src="images/app-store.png">
+              </div>
+          </div>
+
+          <!-- Logo and Description -->
+          <div class="footer-col-2">
+              <img src="images/logo-white.png">
+              <p>Our Purpose Is To Sustainably Make the Pleasure and Benefits of Sports Accessible to the Many.</p>
+          </div>
+
+          <!-- Useful Links -->
+          <div class="footer-col-3">
+              <h3>Useful Links</h3>
+              <ul>
+                  <li>Coupons</li>
+                  <li>Blog Post</li>
+                  <li>Return Policy</li>
+                  <li>Join Affiliate</li>
+              </ul>
+          </div>
+
+          <!-- Follow Us -->
+          <div class="footer-col-4">
+              <h3>Follow Us</h3>
+              <ul>
+                  <li>Facebook</li>
+                  <li>Twitter</li>
+                  <li>Instagram</li>
+                  <li>YouTube</li>
+              </ul>
+          </div>
+      </div>
+
+      <!-- Copyright -->
+      <hr>
+      <p class="copyright">Copyright 2024 - GhanaStore</p>
+  </div>
+</div>
+    <script src="js/cart.js"></script>
+
+    <!-- Cart Item Template -->
+    <template id="cart-item-template">
+        <div class="cart-item" data-id="">
+            <div class="item-image">
+                <img src="" alt="">
+            </div>
+            <div class="item-details">
+                <div class="item-info">
+                    <h3 class="item-name"></h3>
+                    <div class="item-meta">
+                        <span class="item-size">Size: </span>
+                        <span class="item-price">GHC </span>
+                    </div>
+                </div>
+                <div class="item-controls">
+                    <div class="quantity-controls">
+                        <button class="qty-btn minus">-</button>
+                        <input type="number" class="qty-input" value="1" min="1" max="99">
+                        <button class="qty-btn plus">+</button>
+                    </div>
+                    <button class="remove-item">
+                        <i class="fas fa-trash"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </template>
+  </body>
+</html>

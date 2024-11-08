@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RedStore | Account</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/navbar.css">
+    <link rel="stylesheet" href="styles/account.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <div class="navbar">
+        <nav>
+            <div class="logo">
+                <a href="index.html">
+                    <img src="images/logo.png" alt="RedStore">
+                </a>
+            </div>
+            
+            <div class="menu-icon">
+                <i class="fas fa-bars"></i>
+            </div>
+
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="account.html" class="active">Account</a></li>
+                <li><a href="cart.html">
+                    <i class="fas fa-shopping-cart"></i>
+                </a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <!-- Hero Section -->
+    <div class="page-header">
+        <div class="container">
+            <div class="row">
+                <h2>#MyAccount</h2>
+                <p>Login or create a new account to start shopping!</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Account Section -->
+    <div class="account-section">
+        <div class="container">
+            <div class="account-wrapper">
+                <div class="form-container">
+                    <div class="form-btns">
+                        <span class="form-btn active" data-form="login">Login</span>
+                        <span class="form-btn" data-form="register">Register</span>
+                    </div>
+
+                    <!-- Login Form -->
+                    <form id="loginForm" class="form active">
+                        <div class="form-group">
+                            <input type="email" id="loginEmail" required>
+                            <label for="loginEmail">Email</label>
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="form-group">
+                            <input type="password" id="loginPassword" required>
+                            <label for="loginPassword">Password</label>
+                            <i class="fas fa-lock"></i>
+                            <i class="fas fa-eye-slash toggle-password"></i>
+                        </div>
+                        <div class="form-footer">
+                            <div class="remember-me">
+                                <input type="checkbox" id="remember">
+                                <label for="remember">Remember me</label>
+                            </div>
+                            <a href="#" class="forgot-password">Forgot Password?</a>
+                        </div>
+                        <button type="submit" class="btn">Login</button>
+                        <div class="social-login">
+                            <p>Or login with</p>
+                            <div class="social-icons">
+                                <a href="#" class="facebook">
+                                    <i class="fab fa-facebook-f"></i>
+                                    Facebook
+                                </a>
+                                <a href="#" class="google">
+                                    <i class="fab fa-google"></i>
+                                    Google
+                                </a>
+                            </div>
+                        </div>
+                    </form>
+
+                    <!-- Register Form -->
+                    <form id="registerForm" class="form">
+                        <div class="form-group">
+                            <input type="text" id="fullName" required>
+                            <label for="fullName">Full Name</label>
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="registerEmail" required>
+                            <label for="registerEmail">Email Address</label>
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="form-group">
+                            <input type="tel" id="phone" required>
+                            <label for="phone">Phone Number</label>
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="form-group">
+                            <input type="password" id="registerPassword" required>
+                            <label for="registerPassword">Password</label>
+                            <i class="fas fa-lock"></i>
+                            <i class="fas fa-eye-slash toggle-password"></i>
+                        </div>
+                        <div class="terms">
+                            <input type="checkbox" id="terms" required>
+                            <label for="terms">I agree to the <a href="#">Terms & Conditions</a></label>
+                        </div>
+                        <button type="submit" class="btn">Register</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+<div class="footer">
+  <div class="container">
+      <div class="row">
+          <!-- Download App -->
+          <div class="footer-col-1">
+              <h3>Download Our App</h3>
+              <p>Download App for Android and ios mobile phone.</p>
+              <div class="app-logo">
+                  <img src="images/play-store.png">
+                  <img src="images/app-store.png">
+              </div>
+          </div>
+
+          <!-- Logo and Description -->
+          <div class="footer-col-2">
+              <img src="images/logo-white.png">
+              <p>Our Purpose Is To Sustainably Make the Pleasure and Benefits of Sports Accessible to the Many.</p>
+          </div>
+
+          <!-- Useful Links -->
+          <div class="footer-col-3">
+              <h3>Useful Links</h3>
+              <ul>
+                  <li>Coupons</li>
+                  <li>Blog Post</li>
+                  <li>Return Policy</li>
+                  <li>Join Affiliate</li>
+              </ul>
+          </div>
+
+          <!-- Follow Us -->
+          <div class="footer-col-4">
+              <h3>Follow Us</h3>
+              <ul>
+                  <li>Facebook</li>
+                  <li>Twitter</li>
+                  <li>Instagram</li>
+                  <li>YouTube</li>
+              </ul>
+          </div>
+      </div>
+
+      <!-- Copyright -->
+      <hr>
+      <p class="copyright">Copyright 2024 - GhanaStore</p>
+  </div>
+</div>
+</body>
+</html>

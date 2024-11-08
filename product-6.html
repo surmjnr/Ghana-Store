@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>RedStore | Puma Black T-Shirt</title>
+    <link rel="stylesheet" href="styles/style.css" />
+    <link rel="stylesheet" href="styles/navbar.css" />
+    <link rel="stylesheet" href="styles/product-details.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+    <link rel="icon" href="images/logo.png" type="image/x-icon">
+  </head>
+
+  <body>
+    <!-- Navbar -->
+    <div class="navbar">
+      <div class="logo">
+        <a href="index.html"><img src="images/logo.png" alt="RedStore"></a>
+      </div>
+      <nav>
+        <ul id="MenuItems">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="products.html">Products</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="account.html">Account</a></li>
+        </ul>
+      </nav>
+      <a href="cart.html"><img src="images/cart.png" width="30px" height="30px" alt="Cart"></a>
+      <img src="images/menu.png" class="menu-icon" onclick="menutoogle()">
+    </div>
+
+    <!-- Product Details Section -->
+    <section class="product-details">
+      <div class="container">
+        <div class="product-wrapper">
+          <!-- Product Images -->
+          <div class="product-images">
+            <div class="main-image">
+              <img src="images/product-6.jpg" alt="Puma Black T-Shirt" id="productImg" />
+            </div>
+            <div class="small-images">
+              <div class="small-img-col">
+                <img src="images/product-6.jpg" alt="" class="small-img" />
+              </div>
+              <div class="small-img-col">
+                <img src="images/product-6-2.jpg" alt="" class="small-img" />
+              </div>
+              <div class="small-img-col">
+                <img src="images/product-6-3.jpg" alt="" class="small-img" />
+              </div>
+              <div class="small-img-col">
+                <img src="images/product-6-4.jpg" alt="" class="small-img" />
+              </div>
+            </div>
+          </div>
+
+          <!-- Product Info -->
+          <div class="product-info">
+            <h1>Puma Black T-Shirt</h1>
+            <div class="product-rating">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star-half"></i>
+              <span>(42 Reviews)</span>
+            </div>
+            <div class="product-price">
+              <h2>$60.00</h2>
+              <span class="original-price">$75.00</span>
+              <span class="discount">-20%</span>
+            </div>
+
+            <!-- Size Selection -->
+            <div class="size-selection">
+              <h3>Select Size</h3>
+              <div class="size-options">
+                <label class="size-option">
+                  <input type="radio" name="size" value="S">
+                  <span>S</span>
+                </label>
+                <label class="size-option">
+                  <input type="radio" name="size" value="M">
+                  <span>M</span>
+                </label>
+                <label class="size-option">
+                  <input type="radio" name="size" value="L">
+                  <span>L</span>
+                </label>
+                <label class="size-option">
+                  <input type="radio" name="size" value="XL">
+                  <span>XL</span>
+                </label>
+                <label class="size-option">
+                  <input type="radio" name="size" value="XXL">
+                  <span>XXL</span>
+                </label>
+              </div>
+              <a href="#size-guide" class="size-guide">
+                <i class="fas fa-ruler"></i> Size Guide
+              </a>
+            </div>
+
+            <!-- Quantity -->
+            <div class="quantity-wrapper">
+              <h3>Quantity</h3>
+              <div class="quantity-controls">
+                <button class="qty-btn minus">-</button>
+                <input type="number" id="quantity" value="1" min="1" max="99">
+                <button class="qty-btn plus">+</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <div class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="footer-col-1">
+            <h3>Download our App</h3>
+            <p>Download App for Android Phones</p>
+            <div class="app-logo">
+              <img src="images/play-store.png" />
+            </div>
+          </div>
+          <div class="footer-col-2">
+            <img src="images/logo-white.png" />
+            <p>
+              Our Purpose is to sustainability. Make the pleasure and benefits
+              of sports accessible to the many
+            </p>
+          </div>
+          <div class="footer-col-3">
+            <h3>Useful Links</h3>
+            <ul>
+              <li>Coupons</li>
+              <li>Blog Post</li>
+              <li>Return Policy</li>
+              <li>Join Affiliate</li>
+            </ul>
+          </div>
+          <div class="footer-col-4">
+            <h3>Follow Developer</h3>
+            <ul>
+              <a href="https://web.facebook.com/reubenhale45" target="blank"
+                ><li>Facebook</li></a
+              >
+              <a
+                href="https://www.sololearn.com/Profile/18797204"
+                target="blank"
+                ><li>Sololearn</li></a
+              >
+              <a href="https://www.instagram.com/reuben4hale/" target="blank"
+                ><li>Instagram</li></a
+              >
+              <li>
+                <a
+                  href="https://www.youtube.com/channel/UC0OpdEavzDmrJa-5jrloSww?"
+                  target="blank"
+                >
+                  Youtube</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <hr />
+      <p class="Copyright">
+        &copy; Copyright 2024<br />Project Work by Group 6, E Class
+      </p>
+    </div>
+
+    <!-- Javascript for toggle menu and cart functionality -->
+    <script src="product.js"> </script>
+  </body>
+</html>
+
+</html>
